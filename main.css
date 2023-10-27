@@ -29,6 +29,36 @@ body {
   margin: 0;
 }
 
+.left-container {
+  width: 320px;
+  height: 450px;
+  border-radius: 30px;
+  padding: 2cap 0;
+
+  background-color: var(--Light-royal-blue);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  color: var(--White);
+  text-align: center;
+}
+
+.score-container {
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+
+  background-color: var(--Cobalt-blue);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
