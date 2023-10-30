@@ -31,13 +31,27 @@ body {
   max-width: 1440px;
   margin: 0;
 
+  background-color: var(--Pale-blue);
+
   font-family: 'Hanken Grotesk', sans-serif;
 }
 
-.left-container {
-  width: 320px;
+main {
+  width: 640px;
   height: 450px;
-  border-radius: 30px;
+  border-radius: 2rem;
+  background-color: var(--White);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-container {
+  width: 50%;
+  height: 100%;
+  border-radius: 2rem;
   padding: 2cap 0;
 
   background-color: var(--Light-royal-blue);
@@ -51,6 +65,14 @@ body {
   text-align: center;
 }
 
+.left-container h2 {
+  font-size: 1.5rem;
+}
+
+.left-container h4 {
+  font-size: 2rem;
+}
+
 .score-container {
   width: 175px;
   height: 175px;
@@ -62,6 +84,19 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.score-container h3 {
+  font-size: 4rem;
+}
+
+.right-container {
+  width: 50%;
+  height: 100%;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+
+  background-color: ;
 }
 
 .attribution {
