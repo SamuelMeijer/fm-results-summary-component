@@ -1,5 +1,5 @@
 /* Importing Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
 
 /* CSS RESET */
 :root {
@@ -23,6 +23,7 @@
 
   --Violet-blue: hsla(256, 72%, 46%, 1);
   --Persian-blue: hsla(241, 72%, 46%, 0);
+  --Persian-blue-alpha: hsla(241, 72%, 46%, 1);
 }
 
 * {
@@ -39,7 +40,7 @@ body {
 
   background-color: var(--Pale-blue);
 
-  font-family: 'Hanken Grotesk', sans-serif;
+  font-family: "Hanken Grotesk", sans-serif;
   font-size: 1.125rem;
   font-weight: 500;
 
@@ -59,6 +60,8 @@ main {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+
+  box-shadow: 7px 7px 7px 1px rgba(0, 0, 0, 0.06);
 }
 
 .left-container {
@@ -67,14 +70,14 @@ main {
   border-radius: 2rem;
   padding: 2rem 0;
 
-  background: linear-gradient(var(--Light-slate-blue),var(--Light-royal-blue));
+  background: linear-gradient(var(--Light-slate-blue), var(--Light-royal-blue));
 
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 
-  color: hsla(0,0%,100%,55%);
+  color: hsla(0, 0%, 100%, 55%);
   text-align: center;
 }
 
@@ -120,7 +123,8 @@ main {
   justify-content: space-between;
 }
 
-.right-container h2, .right-container strong {
+.right-container h2,
+.right-container strong {
   color: var(--Dark-gray-blue);
 }
 
@@ -133,6 +137,11 @@ main {
   color: var(--White);
   font-weight: 500;
   font-size: 1.1rem;
+}
+
+.right-container button:hover {
+  background: linear-gradient(var(--Light-slate-blue), var(--Light-royal-blue));
+  cursor: pointer;
 }
 
 .data-container {
@@ -187,3 +196,6 @@ main {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+/* TODO:
+Make responsive */
